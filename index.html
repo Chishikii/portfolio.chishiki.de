@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finn Pelzer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8d978352b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="canvas">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>F</span>inn.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Finn</span> Pelzer<br>From Germany</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------- About --------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <p>I'm a software developer who strives for perfection in every detail. I love to learn and create
+                        new things. My curiosity and commitment allowed me to try a lot of different things. I've done
+                        projects ranging from the lowest level with Vulkan and GLFW all the way to game engines like
+                        Unity. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Application Development</span><br>
+                                <p>Creating applications in various languages and frameworks.</p>
+                                <div class="skill-list">
+                                    <p class="skill">C</p>
+                                    <p class="skill">C++</p>
+                                    <p class="skill">C#</p>
+                                    <p class="skill">LateX</p>
+                                    <p class="divisor"></p>
+                                    <p class="skill">HTML</p>
+                                    <p class="skill">CSS</p>
+                                    <p class="skill">JS</p>
+                                </div>
+                                <div class="skill-list">
+                                    <p class="skill">Unity</p>
+                                    <p class="skill">Unreal Engine</p>
+                                    <p class="skill">Vulkan</p>
+                                    <p class="skill">GLFW</p>
+                                </div>
+                            </li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>February 2022 - Current</span><br>Software Developer at Otto Bihler
+                                Maschinenfabrik.
+                                <ul id="details">
+                                    <li>Writing Tools that make it easy to create interactive Applications.</li>
+                                </ul>
+                            </li>
+                            <li><span>October 2021 - February 2022</span><br>Internship at Otto Bihler Maschinenfabrik.
+                                <ul id="details">
+                                    <li>Created multi platform Applications that interactively presented the complex
+                                        behaviours of punching and bending technology.</li>
+                                    <li>Helped the company evaluate the benefit of using game engines to present their
+                                        data virtually.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2015 - 2018</span><br>B.Sc. Game Engineering from University of Applied Sciences Kempten</li>
+                            <li><span>2015 - 2018</span><br>Abitur from Regionales Bildungszentrum Technik Kiel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------- Projects --------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-unity"></i>
+                    <h2>Unity</h2>
+                    <p>I've been creating games, applications and tools with unity since 2018. Learn more about </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------- Portfolio --------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tacontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tacontent of tacontents) {
+                tacontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0px";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
