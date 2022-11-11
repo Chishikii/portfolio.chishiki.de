@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: #080808;
+    background: #0a050d;
     color: #fff;
 }
 
@@ -33,16 +33,64 @@ body {
 
 .container h1 {
     font-size: 70px;
+    font-weight: 500;
 }
 
 .container h1 span {
     color: #ff004f;
 }
 
+.container h2{
+    font-size: 	40px;
+    font-weight: 100;
+    text-decoration: none;
+    position: relative;
+}
+
+.container h2 span{
+    color: #ff004f;
+    font-weight: 500;
+}
+
+.container h2 span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+
+    bottom: -6px;
+}
+
+.header-description{
+    display: flex;
+}
+
+.header-description p{
+    font-size: 40px;
+    font-weight: 100;
+    position: relative;
+}
+
+.header-description .underline{
+    font-weight: 500;
+}
+
+.header-description .underline::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
 nav {
     display: flex;
+    /* align-items: center; */
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
 
