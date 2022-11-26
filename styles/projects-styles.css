@@ -1,0 +1,9 @@
+#projects {
+    display: flex;
+    height: 85vh;
+    width: 100%;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: var(--color-violet);
+}
