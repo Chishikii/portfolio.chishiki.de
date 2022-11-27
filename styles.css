@@ -1,6 +1,4 @@
-@import url(projects-styles.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
 
 :root {
     --text-color: #F2F2F7;
@@ -16,11 +14,16 @@
     --font-weight: 500;
     --font-weight-light: 300;
 
-    --font-size-default: 24px;
-    --font-size-huge: 40px;
-    --font-size-large: 40px;
+    --font-size-xxs: 12px;
+    --font-size-xs: 13px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-xxl: 22px;
+    --font-size-heading: 32px;
 
-    --content-width: 1440px;
+    --content-width: 1024px;
 }
 
 * {
@@ -82,8 +85,7 @@ body {
 
 nav a {
     font-weight: var(--font-weight);
-    font-size: var(--font-size-default);
-    line-height: 19px;
+    font-size: var(--font-size-xl);
     text-align: center;
     text-decoration: none;
     color: var(--text-color);
@@ -180,24 +182,26 @@ nav a {
 }
 
 #description-text h1 {
-    font-size: var(--font-size-huge);
+    font-size: var(--font-size-heading);
 }
 
 #description-text h2 {
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-xxl);
     color: var(--text-color-light);
 }
 
 #description-text h3,
 p {
     color: var(--color-violet);
-    font-size: var(--font-size-default);
+    font-size: var(--font-size-sm);
     font-weight: var(--font-weight-light);
 
     margin-bottom: 30px;
+    margin-right: 40px;
 }
 
 #description-text p {
+    font-size: var(--font-size-md);
     color: var(--text-color-light);
 
     margin-top: 30px;
@@ -231,7 +235,7 @@ p {
     margin-top: 10px;
     padding: 8px 16px;
     border: 1px solid var(--color-violet);
-    font-size: var(--font-size-default);
+    font-size: var(--font-size-md);
     text-decoration: none;
     color: var(--text-color);
     transition: 0.2s;
@@ -243,7 +247,7 @@ p {
 
 #divider {
     width: 100%;
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-heading);
     font-weight: var(--font-weight-light);
     color: var(--text-color);
     letter-spacing: 2px;
@@ -255,7 +259,7 @@ p {
 }
 
 #divider span {
-    color: var(--color-violet)
+    color: var(--color-violet);
 }
 
 #divider h1::after {
@@ -265,4 +269,16 @@ p {
     height: 2px;
     margin: auto 30px;
     background-color: var(--color-violet);
+}
+
+/* Projects */
+
+#projects {
+    display: flex;
+    height: 85vh;
+    width: 100%;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: var(--color-violet);
 }
