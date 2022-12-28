@@ -19,11 +19,17 @@
     --font-weight: 500;
     --font-weight-light: 300;
 
+    --fs-small: 14px;
+    --fs-normal: 16px;
+    --fs-medium: 18px;
+    --fs-large: 32px;
+
     --font-size-default: 24px;
     --font-size-huge: 40px;
     --font-size-large: 40px;
 
-    --content-width: 1440px;
+    --main-window-width: 1440px;
+    --navbar-content-width: 1024px;
 }
 
 * {
@@ -57,10 +63,16 @@ body {
     justify-content: center;
 }
 
+.main-window {
+    display: flex;
+    width: var(--main-window-width);
+}
+
 #navbar {
     display: flex;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 10;
     color: var(--color-background-shadow);
@@ -69,7 +81,7 @@ body {
 
 #navbar-content {
     display: flex;
-    width: var(--content-width);
+    width: var(--navbar-content-width);
     padding: 32px 0 8px;
     margin-left: auto;
     margin-right: auto;
@@ -152,11 +164,11 @@ nav a {
     padding: 5px;
 }
 
-#main-window {
+.main-window-content {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: var(--content-width);
+    width: var(--navbar-content-width);
     padding-top: 30vh;
     padding-left: 128px;
     padding-right: 128px;
@@ -170,7 +182,6 @@ nav a {
     display: flex;
     height: 85vh;
     width: 100%;
-    gap: 20px;
     align-items: flex-start;
     justify-content: space-between;
     color: var(--text-color);
@@ -178,23 +189,31 @@ nav a {
 
 #description-text {
     display: flex;
+    background-color: transparent;
+    flex-shrink: 0;
+    z-index: 1;
+    width: 100%;
     align-items: flex-start;
     flex-direction: column;
 }
 
 #description-text h1 {
-    font-size: var(--font-size-huge);
+    font-size: var(--fs-large);
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 
 #description-text h2 {
-    font-size: var(--font-size-large);
+    font-size: var(--fs-large);
+    font-weight: 300;
+    background-color: transparent;
     color: var(--text-color-light);
 }
 
 #description-text h3,
 p {
     color: var(--color-violet);
-    font-size: var(--font-size-default);
+    font-size: var(--fs-small);
     font-weight: var(--font-weight-light);
 
     margin-bottom: 30px;
@@ -202,6 +221,7 @@ p {
 
 #description-text p {
     color: var(--text-color-light);
+    font-size: var(--fs-normal);
 
     margin-top: 30px;
 }
@@ -227,6 +247,12 @@ p {
 
 #description-text p a:hover::after {
     width: 100%;
+}
+
+.description-logo {
+    position: relative;
+    left: -320px;
+    background-color: transparent;
 }
 
 #button {
