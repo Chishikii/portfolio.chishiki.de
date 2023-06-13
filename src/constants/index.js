@@ -1,28 +1,23 @@
 import {
     mobile,
     backend,
-    creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
-    nodejs,
-    mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    unity,
+    bihler,
     carrent,
     jobit,
     tripguide,
     threejs,
+    c,
+    cpp,
+    csharp
   } from "../assets";
   
   export const navLinks = [
@@ -42,20 +37,16 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Unity Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: ".NET Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Graphics Enthusiast",
       icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
     },
   ];
   
@@ -81,10 +72,6 @@ import {
       icon: tailwind,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
@@ -92,59 +79,47 @@ import {
       name: "figma",
       icon: figma,
     },
+    {
+      name: "Unity",
+      icon: unity,
+    },
+    {
+      name: "CSharp",
+      icon: csharp,
+    },
+    {
+      name: "C++",
+      icon: cpp,
+    },
+    {
+      name: "C",
+      icon: c,
+    },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
+      title: "Software Developer",
+      company_name: "Otto Bihler Maschinenfabrik GmbH \& Co. KG",
+      icon: bihler,
+      iconBg: "#c0c0c3",
       date: "Jan 2021 - Feb 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Writing multi platform Applications that interactively presented the complex behaviours of punching and bending technology using game engines.",
+        "Develop salable automation tools to simplify the production workflow of creating usable 3D data. This ranges from converting and optimizing to creating UVs and custom data.",
+        "Efficiently manage a small team in delivering both, software and art projects.",
+        "Facilitate communication between customers, artists and developers.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Software Developer Intern",
+      company_name: "Otto Bihler Maschinenfabrik GmbH \& Co. KG",
+      icon: bihler,
+      iconBg: "#c0c0c3",
+      date: "October 2021 - February 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Created multi platform Applications that interactively presented the complex behaviours of punching and bending technology.",
+        "Helped the company evaluate the benefit of using game engines to present their data virtually.",
       ],
     },
   ];
